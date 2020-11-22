@@ -6,6 +6,8 @@ https://medium.com/@bmatcuk/gaming-on-amazon-s-ec2-83b178f47a34
 
 https://medium.com/tensoriot/cloud-gaming-on-amazon-web-services-4be806c0051b
 
+https://blog.parsecgaming.com/easy-aws-g2-gpu-instance-setup-for-gaming-2764ccf9f50e
+
 AMI AWS Marketplace from NVIDIA or Build your own
 
 understnad pricing of EC2 OnDemand vs Spot && Running vs Else and Pricing of EBS storage basically you get charged whether you use it or not, and be mindful it only goes away if the terminate of EC2 deletion flag is marked
