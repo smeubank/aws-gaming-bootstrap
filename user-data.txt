@@ -18,6 +18,8 @@ $WebClient.DownloadFile("https://uk.download.nvidia.com/GFE/GFEClient/3.20.5.70/
 $WebClient.DownloadFile("https://us.download.nvidia.com/tesla/425.25/425.25-tesla-desktop-win10-64bit-international.exe","$file\425.25-tesla-desktop-win10-64bit-international.exe")
 $WebClient.DownloadFile("https://www.microsoft.com/en-us/download/confirmation.aspx?id=35","$file\dxwebsetup.exe")
 $WebClient.DownloadFile("http://rzr.to/71-surround-sound-installer","$file\SurroundSoundInstaller_V1.0.129.165.exe")
+$WebClient.DownloadFile("https://builds.parsecgaming.com/package/parsec-windows.exe","$file\parsec-windows.exe")
+https://builds.parsecgaming.com/package/parsec-windows.exe
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module -Name SteamPS -Force
 Install-SteamCMD -Force
@@ -29,12 +31,13 @@ ECHO Y | choco install geforce-experience
 ECHO Y | choco install geforce-game-ready-driver
 $file = 'C:\Program Files (x86)\Steam'
 Start-Process -FilePath "$file\Steam.exe"
+Start-Process -FilePath "$file\parsec-windows.exe"
 Install-Module -Name DeviceManagement -Force 
-$deviceName = Read-Host -Prompt 'Microsoft Basic Display Adapter';Get-Device | Where-Object -Property Name -Like $deviceName | Disable-Device 
-$deviceName = Read-Host -Prompt 'NVIDIA Tesla T4'; Get-Device | Where-Object -Property Name -Like $deviceName | Enable-Device
 Get-WindowsFeature  “Wireless LAN Service” 
 Install-WindowsFeature -Name Wireless-Networking
 net start WlanSvc 
+$deviceName = Read-Host -Prompt 'Microsoft Basic Display Adapter';Get-Device | Where-Object -Property Name -Like $deviceName | Disable-Device 
+$deviceName = Read-Host -Prompt 'NVIDIA Tesla T4'; Get-Device | Where-Object -Property Name -Like $deviceName | Enable-Device
 Install-Module PSWindowsUpdate
 Get-WindowsUpdate
 Install-WindowsUpdate
