@@ -19,6 +19,8 @@ $file = 'C:\Users\Administrator\Downloads'
 $WebClient.DownloadFile("https://laptop-updates.brave.com/latest/winx64","$file\BraveBrowserSetup.exe")
 Start-Process -FilePath "$file\BraveBrowserSetup.exe"
 $WebClient.DownloadFile("https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe","$file\SteamSetup.exe")
+$WebClient.DownloadFile("https://builds.parsecgaming.com/package/parsec-windows.exe","$file\parsec-windows.exe")
+Start-Process -FilePath "$file\BraveBrowserSetup.exe"
 $WebClient.DownloadFile("https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip","$file\steamcmd.zip")
 $WebClient.DownloadFile("https://uk.download.nvidia.com/GFE/GFEClient/3.20.5.70/GeForce_Experience_v3.20.5.70.exe","$file\GeForce_Experience_v3.20.5.70.exe")
 $WebClient.DownloadFile("https://us.download.nvidia.com/tesla/425.25/425.25-tesla-desktop-win10-64bit-international.exe","$file\425.25-tesla-desktop-win10-64bit-international.exe")
