@@ -10,6 +10,10 @@ AMI AWS Marketplace from NVIDIA or Build your own
 
 understnad pricing of EC2 OnDemand vs Spot && Running vs Else and Pricing of EBS storage basically you get charged whether you use it or not, and be mindful it only goes away if the terminate of EC2 deletion flag is marked
 
+https://aws.amazon.com/ebs/pricing/
+https://medium.com/tensult/launch-the-aws-instance-from-a-snapshot-3f7397229a1b
+https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Creating_EBSbacked_WinAMI.html
+
 https://aws.amazon.com/marketplace/pp/B07STLTHM8?ref_=srh_res_product_title#pdp-pricing
 
 https://aws.amazon.com/ec2/pricing/?trkCampaign=acq_paid_search_brand&sc_channel=PS&sc_campaign=acquisition_EMEA&sc_publisher=Google&sc_category=Cloud%20Computing&sc_country=EMEA&sc_geo=EMEA&sc_outcome=acq&sc_detail=%2Bec2&sc_content={ad%20group}&sc_matchtype=b&sc_segment=468170191336&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Cloud%20Computing|EC2|EMEA|EN|Sitelink|xx|EU&s_kwcid=AL!4422!3!468170191336!b!!g!!%2Bec2&ef_id=Cj0KCQiAkuP9BRCkARIsAKGLE8Vih18JoHLrtUbZMSIMywyFf_68cNTueuEZYdlVO-a1jp-T_krcyicaAreaEALw_wcB:G:s&s_kwcid=AL!4422!3!468170191336!b!!g!!%2Bec2
